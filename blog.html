@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="content.html">CONTACT</a></li>  
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certificate and Online Programs</h1>
+    </section>
+
+    <!-- blog page content -->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <h2>Our Certificate and Online Programs</h2>
+                <p>Georgia State University offers 248 major programs for degree granting/certificate programs. Of that, the distance learning opportunity (online degrees/courses) is given to 14 major programs - 4 Bachelors, 5 Masters, 2 Doctorate, and 3 Post-graduate Certificate. The 2023 tuition & fees is $8,478 for Georgia residents and $23,709 for out-of-state students. Total 4,700 students out of total 36,973 students have enrolled online exclusively. Georgia State University is accredited by Southern Association of Colleges and Schools, Commission on Colleges.</p>
+                <br>
+                <p> Georgia State University is a four-year public school located in Atlanta, Georgia. It offers graduate degree programs as well as undergraduate degree programs. For the academic year 2022-2023, the tuition & fees are $8,478 for Georgia residents and $23,709 for other students on average. It offers 248 degree programs. Of that, the distance learning opportunity is given to 14 programs - 4 Bachelors, 5 Masters, 2 Doctorate, 3 Post-Bachelors or Post-Masters Certificate.</p>
+                <br>
+                <p>At Georgia State University, there are 36,973 students including both undergraduate and graduate schools, with full-time and part-time status. Of that, 24,369 students were attending classes through distance learning (4,700 students are enrolled exclusively and 19,669 are enrolled in some online courses). By student location, out of a total of 4,700 enrolled exclusively in online courses, 4,414 Georgia Residents were enrolled in online classes exclusively, 188 students living in U.S. States other than Georgia, and 95 non-U.S. students enrolled in online courses.</p>
+
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea  rows="5" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="hero-btn blue-btn">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Online Degree Programs</h3>
+                <div>
+                    <span>Total</span>
+                    <span>14 programs</span>
+                </div>
+                <div>
+                    <span>Bachelors</span>
+                    <span>4 programs</span>
+                </div>
+                <div>
+                    <span>Masters</span>
+                    <span>5 programs</span>
+                </div>
+                <div>
+                    <span>Doctorate</span>
+                    <span>2 programs</span>
+                </div>
+                <div>
+                    <span>Post-graduation</span>
+                    <span>3 programs</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Georgia State University is accredited by the Southern Association of Colleges and Schools Commission on Colleges to award bachelor's, master's, and professional doctorate.</p>
+        <div class="icons">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/GeorgiaStateUniversity/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/GeorgiaStateUniversity/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/GeorgiaStateU?s=20" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/school/georgiastateuniversity/mycompany/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>Made with love by Abigiya Mesfin</p>
+    </section>
+
+    <!-- JavaScript for toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
